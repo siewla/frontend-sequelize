@@ -39,9 +39,9 @@ const Login = () => {
         },
         withCredentials: true,
       });
-      console.log(resp); // you can see in console
+      console.log(resp.data.message); // you can see in console
     } catch (err) {
-      console.log(err);
+      console.log(err.response.data.message);
     }
   };
 
