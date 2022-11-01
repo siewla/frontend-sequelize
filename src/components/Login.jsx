@@ -3,8 +3,8 @@ import UserForm from "../shared/UserForm";
 import axios from "axios";
 import { Button } from "@mui/material";
 
-const BACKEND_URL_LOGIN = "http://localhost:4000/users/login";
-const BACKEND_URL_CHECK_SESSION = "http://localhost:4000/users/checksession";
+const BACKEND_URL_LOGIN = process.env.REACT_APP_BACKEND_URL + "users/login";
+const BACKEND_URL_CHECK_SESSION = process.env.REACT_APP_BACKEND_URL + "users/checksession";
 
 const Login = () => {
   const [email, setEmail] = useState("");

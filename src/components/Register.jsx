@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import UserForm from "../shared/UserForm";
 import axios from "axios";
 
-const BACKEND_URL_REGISTER = "http://localhost:4000/users/register";
+const BACKEND_URL_REGISTER = process.env.REACT_APP_BACKEND_URL + "users/register";
 
 const Login = () => {
   const [email, setEmail] = useState("");
